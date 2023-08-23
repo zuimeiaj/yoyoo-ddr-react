@@ -13,13 +13,8 @@ function App() {
           x={transform.x},y={transform.y},w={transform.width},h={transform.height},r={transform.rotation}
         </div>
       </DDR>
+    
       
-
-      <DDR value={{ ...transform, y: transform.y + 200 }}>
-      <div style={{ background: 'red', width: '100%', height: '100%' }}>
-        
-        </div>
-      </DDR>
     </>
   )
 }
