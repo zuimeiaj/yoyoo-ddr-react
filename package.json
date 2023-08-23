@@ -20,7 +20,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "main": "dist/ddr-react.es.js",
+  "main": "dist/ddr-react.umd.js",
   "files": [
     "dist",
     "src/components/ddr"
