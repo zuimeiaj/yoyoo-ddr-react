@@ -41,7 +41,7 @@ class Matrix {
   dot(v: Vector | Matrix) {
     if (v instanceof Vector && this.cols() === v.length) {
       return new Vector(
-        new Array(v.length).fill(null).map((item, index) => {
+        new Array(v.length).fill(null).map((_, index) => {
           return this.rowVector(index).dot(v)
         })
       )

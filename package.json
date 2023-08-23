@@ -1,8 +1,15 @@
 {
   "name": "yoyoo-ddr-react",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.1",
   "type": "module",
+  "description": "Lightweight and no dependencies,use draggable, resizable, rotatable, configurable for react component ",
+  "keywords": [
+    "draggable",
+    "resizable",
+    "rotatable",
+    "react"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -13,16 +20,36 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "main": "dist/ddr-react.es.js",
+  "files": [
+    "dist",
+    "src/components/ddr"
+  ],
+  "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/runtime": "^7.22.10",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.5.3",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-legacy": "^4.1.1",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "less": "^4.2.0",
+    "tslib": "^2.6.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  }
+  },
+  "homepage": "https://zuimeiaj.github.io/ddr/",
+  "browserslist": [
+    "> 0.5%",
+    "not dead"
+  ]
 }

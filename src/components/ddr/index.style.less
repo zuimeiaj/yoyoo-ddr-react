@@ -1,0 +1,43 @@
+.yoyoo-ddr {
+  position: absolute;
+  .resize-handler.tm {
+    left: 50%;
+  }
+  .resize-handler.r {
+    top: 50%;
+  }
+  .resize-handler.bm {
+    left: 50%;
+  }
+  .resize-handler.l {
+    top: 50%;
+    cursor: pointer;
+  }
+
+  .resize-handler,
+  .rotate-handler {
+    display: none;
+    position: absolute;
+    border: 1px solid #607d8b;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+  .rotate-handler {
+    left: 50%;
+    cursor: crosshair;
+  }
+  &.active {
+    border: 1px dashed #607d8b;
+    > .resize-handler-wrapper > .resize-handler,
+    > .rotate-handler {
+      display: inline-block;
+    }
+  }
+  .br,
+  .tr,
+  .tl,
+  .bl {
+    background: #607d8b;
+  }
+}

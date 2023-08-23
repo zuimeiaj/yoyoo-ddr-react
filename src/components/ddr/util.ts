@@ -1,5 +1,5 @@
 import Matrix from './Matrix'
-import { DDRPoint, TransformProps } from './type'
+import { DDRPoint, ElementRect, TransformProps } from './type'
 
 // 缩放时基于对角坐标固定缩放
 // 矩形除了4个直角坐标点外，还有每条边的一个中心点坐标，按照数组的顺序从左上顺时针到左中排列
@@ -88,7 +88,7 @@ export function getPoints({ x, y, width, height, rotation }: TransformProps, zoo
       return { x: item[0] + wc + x * zoom, y: -(item[1] - hc) + y * zoom }
     })
 }
-export function getBoundingRect(transform: TransformProps, zoom: number) {
+export function getBoundingRect(transform: TransformProps, zoom: number): ElementRect {
   if (transform.rotation === 0) {
     return {
       left: transform.x,
